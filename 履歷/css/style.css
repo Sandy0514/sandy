@@ -1,0 +1,63 @@
+body{
+	/* 外距值歸零 */
+	margin: 0;
+	/* 內距值歸零 */
+	padding: 0;
+	/* 背景顏色與圖片 */
+	background: #ae8762 url('../images/bg.jpg');
+	/* 背景不要重複 */
+	background-repeat: no-repeat;
+	/* 圖片的水平位置為置中；垂直位置為靠上 */
+	background-position: top center;
+}
+
+/********** 遊戲封面-start按鈕動畫 **********/
+.start-btn{
+	/* 動畫的關鍵影格名稱 */
+	animation-name: start-btn;
+	/* 動畫播放一次秒數 */
+	animation-duration: .5s;
+	/* 動畫轉變時時間的加速曲線 */
+	animation-timing-function: ease;
+	/* 延遲播放時間 */
+	animation-delay: 0s;
+	/* 動畫重複的次數 */
+	animation-iteration-count: infinite;
+	/* 動畫播放完畢後會反向回播 */
+	animation-direction: alternate;
+}
+/********** 關鍵影格動畫 **********/
+@keyframes start-btn {
+    0% {
+		/* 動畫在0%時的尺寸比例 */
+		transform: scale(1, 1); 
+	}
+    100% {
+		/* 動畫在100%時的尺寸比例 */
+		transform: scale(1.1, 1.1);
+	}
+}
+
+/********** 內容調整 **********/
+.game-content{
+	/* 向上外距 */
+	margin-top: 15rem;
+}
+
+/********** 活動辦法 **********/
+ul.game-rule{
+	/* 項目符號改為數字類型 */
+	list-style: decimal;
+	/* 左邊內距 */
+	padding-left: 1.6rem;
+}
+
+/********** 頁腳 **********/
+footer{
+	/* 高度 */
+	height: 40px;
+	/* 行高 */
+	line-height: 40px;
+	/* 背景顏色 */
+	background-color: #000;
+}
